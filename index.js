@@ -1,9 +1,16 @@
+require('dotenv').config();
 const express = require("express");
-const { erroHandlers } = require("./handlers");
-const handle = require('./handlers')
+const handle = require('./handlers');
+const cors = require("cors");
+const bodyparser =require("body-parser");
+
 
 const app = express();
 const port = 3280;
+
+app.use(cors());
+app.use(bodyparser.json());
+
 
 app.get("/",(req,res)=>res.json({hello:"world"}));
 
