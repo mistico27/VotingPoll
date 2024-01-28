@@ -4,7 +4,7 @@ const connection = async()=>{
     const databaseURL='mongodb+srv://crisfris27:EeiM4LQYg5BTka1q@cluster0.iwmzlp8.mongodb.net/Polls'
     mongoose.connect(databaseURL)
     .then(() => {
-    console.log("we are connected to mongo jajaja!!!!");
+    console.log("we are connected to mongo cabrones jajaja!!!!");
     })
     .catch((err) => {
     console.log("We have an error, we could not connected to activity database", err);
